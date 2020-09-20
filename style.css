@@ -1,0 +1,116 @@
+body {
+    background: linear-gradient(to bottom, rgba(0, 62, 250, 00.8),  rgba(225, 228, 235, 0.3));
+    /* background: white; */
+    font-size: 2em;
+    text-align: justify;
+}
+
+/* class selector */
+.big_title {
+    color: steelblue;
+    background-color: rgba(250, 62, 10, 0.3);
+}
+
+h2[class=subtitle] {
+    color: rgba(250, 62, 10, 0.3);
+    font-family: 'Ranchers', cursive;
+}
+
+/* id selector */
+#mysubtitle {
+    color: rgb(145, 157, 194);
+}
+
+/* mouse over */
+h2:hover {
+    color: #324ea8;
+}
+
+/* li:nth-child(2){
+    color: steelblue;
+} */
+
+#youtube-link:link, #youtube-link:visited {
+    text-decoration: none;
+    color: red;
+    float: right;
+}
+
+#youtube-link:hover {
+    color: purple;
+}
+
+textarea ~ button {
+    color: purple;
+}
+
+/* child selectors */
+ul > li {
+    color: blue;
+}
+
+ul ol li {
+    color: white;
+}
+
+img[src^="images"] {
+    padding: 10px 20px 50px 0;
+    border: 5px solid yellow;
+
+}
+
+#repeat-pika {
+    height: 400px;
+    width: 48%;
+
+    background: url(images/repeatPika.jpg);
+    background-size: cover;
+}
+
+#color-bar {
+    height: 400px;
+    width: 70%;
+
+    background: linear-gradient(215deg, red, blue);
+    background-size: cover;
+}
+
+#radial-bar {
+    height: 400px;
+    width: 50%;
+
+    background: radial-gradient(circle, red 20%, blue 40%, green);
+    background-size: cover;
+
+    float: right;
+}
+
+.fontstyle-test {
+    font-style: italic;
+}
+
+.container {
+    background-color: white;
+    margin: 10px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-item {
+    background: green;
+    color: white;
+    text-align: center;
+    flex-grow: 1;
+
+    width: 70px;
+    line-height: 50px;
+    margin: 10px;
+}
+
+
+
